@@ -1,0 +1,197 @@
+body {
+  background-color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.form-card {
+  background-color: hsl(0, 0%, 100%);
+  height: 600px;
+  width: 900px;
+  border-radius: 30px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card-left {
+  margin-top: 40px;
+  padding-right: 87px;
+}
+.card-left h1 {
+  font-size: 50px;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+.card-left p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.card-left ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.card-left span {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 15px;
+  opacity: 0.5px;
+}
+.card-left form label {
+  font-weight: 700;
+}
+form input {
+  border-radius: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+.submit-button {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+}
+form input:active {
+  border: 2px solid black;
+}
+.submit-button:active,
+.submit-button:hover {
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 0%,
+    rgba(253, 95, 47, 1) 75%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: white;
+  border: none;
+}
+/* Thanks card styling*/
+.thanks-card {
+  width: 400px;
+  height: 420px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  margin-top: 200px;
+  padding: 40px;
+  margin-bottom: 200px;
+}
+#thanks-card {
+  display: none;
+}
+.thanks-card h1 {
+  font-weight: bold;
+}
+.thanks-card p {
+  font-size: 13px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+.dismiss-button {
+  background-color: hsl(234, 29%, 20%);
+  padding: 12px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+}
+.dismiss-button:hover,
+.dismiss-button:active {
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 0%,
+    rgba(253, 95, 47, 1) 75%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border: none;
+  color: hsl(0, 0%, 100%);
+}
+.email-label {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .form-section {
+    order: 2;
+  }
+  .image-section {
+    order: 1;
+    padding: 0px;
+    margin: 0px;
+  }
+  .form-card {
+    margin: 0px;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+  }
+  #footer-content {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -22px;
+  }
+  #thanks-card {
+    margin: 0px;
+    height: 100vh;
+    border-radius: 0px;
+    padding: 0px;
+    width: auto;
+  }
+  .card-left span {
+    padding-left: 0px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .list-space {
+    margin-top: 20px;
+  }
+  .submit-button {
+    margin-bottom: 46px;
+  }
+  .thanks-card h1 {
+    font-size: 60px;
+  }
+  .thanks-card p {
+    font-size: 20px;
+  }
+  .dismiss-button {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .image-section {
+    order: 1;
+  }
+  .form-section {
+    order: 2;
+  }
+  .form-card {
+    height: 100%;
+  }
+  .submit-button {
+    margin-bottom: 46px;
+  }
+}
